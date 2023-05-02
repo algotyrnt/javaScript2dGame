@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>2D Game</title>
+        <link rel="icon" href="favicon.jpg"/>
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+
+    <body class="body" onkeyup="keyCheck(event);">
+
+        <div class="background" id="background">
+            <div class="score" id="score">0</div>
+            <img src="Run (1).png" class="player" id="player"/>
+        </div>
+
+        <div class="gameStart" id="gameStart">
+             <div class="map">
+                 <button class="map1" onclick="map1();"></button>
+                 <button class="map2" onclick="map2();"></button>
+                 <button class="map3" onclick="map3();"></button>
+                 <button class="map4" onclick="map4();"></button>
+                 <button class="map5" onclick="map5();"></button>
+             </div>
+            <div class="start">PRESS ENTER TO START</div>
+            <div class="footnote">Punjitha Bandara - Building a 2D sprites animation game using pure HTML, CSS, and JavaScript</div>
+        </div>
+
+        <div class="gameOver" id="gameOver">
+            <div class="over">Your Score</div>
+            <div id="endScore">0</div>
+            <button class="btn" onclick="restart();">New Game</button>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
